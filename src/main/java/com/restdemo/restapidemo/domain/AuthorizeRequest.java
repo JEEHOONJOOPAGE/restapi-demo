@@ -7,10 +7,10 @@ import org.springframework.stereotype.Component;
 
 @Component
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class PaidRequest {
+public class AuthorizeRequest {
 
 
-    @JsonProperty("pnr") public String pnr;
+    @JsonProperty("pnr_no") public String pnrNo;
     @JsonProperty("transid") public String transid;
     @JsonProperty("cur") public String cur;
     @JsonProperty("amt") public String amt;
@@ -18,7 +18,7 @@ public class PaidRequest {
     @Override
     public String toString() {
         return "PaidRequest{" +
-                "pnr='" + pnr + '\'' +
+                "pnrNo='" + pnrNo + '\'' +
                 ", transid='" + transid + '\'' +
                 ", cur='" + cur + '\'' +
                 ", amt='" + amt + '\'' +

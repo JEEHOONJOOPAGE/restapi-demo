@@ -7,18 +7,21 @@ import org.springframework.stereotype.Component;
 
 @Component
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class RefundRequest {
+public class AcceptRequest {
 
     @JsonProperty("pnr_no") public String pnrNo;
-    @JsonProperty("transid") public String transid;
+    @JsonProperty("user_id") public String userId;
+    @JsonProperty("credit_card_number") public String creditCardNumber;
     @JsonProperty("cur") public String cur;
     @JsonProperty("amt") public String amt;
 
+
     @Override
     public String toString() {
-        return "RefundRequest{" +
+        return "AcceptRequest{" +
                 "pnrNo='" + pnrNo + '\'' +
-                ", transid='" + transid + '\'' +
+                ", userId='" + userId + '\'' +
+                ", creditCardNumber='" + creditCardNumber + '\'' +
                 ", cur='" + cur + '\'' +
                 ", amt='" + amt + '\'' +
                 '}';
