@@ -17,7 +17,7 @@ public class AuthorizeRequest {
 
     @Override
     public String toString() {
-        return "PaidRequest{" +
+        return "AuthorizeRequest{" +
                 "pnrNo='" + pnrNo + '\'' +
                 ", transid='" + transid + '\'' +
                 ", cur='" + cur + '\'' +

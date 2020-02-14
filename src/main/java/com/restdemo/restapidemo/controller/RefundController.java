@@ -23,6 +23,7 @@ public class RefundController {
         response.refundid = "TESTREFUND0000001";
         response.cur = request.cur;
         response.amt = request.amt;
+        System.out.println(response);
         return response;
     }
 

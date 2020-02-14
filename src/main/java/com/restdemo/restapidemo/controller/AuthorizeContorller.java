@@ -19,6 +19,7 @@ public class AuthorizeContorller {
         System.out.println(request.toString());
         response.resultCode = "0000";
         response.resultMessage = "success";
+        System.out.println(response);
         return response;
     }
 

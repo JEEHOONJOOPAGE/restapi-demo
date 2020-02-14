@@ -22,6 +22,7 @@ public class AcceptController {
         response.resultCode = "0000";
         response.resultMessage = "success";
         response.transid = "TEST2020021400000001";
+        System.out.println(response);
         return response;
     }
 

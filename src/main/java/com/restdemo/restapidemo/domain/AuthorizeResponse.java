@@ -15,7 +15,7 @@ public class AuthorizeResponse {
 
     @Override
     public String toString() {
-        return "PaidResponse{" +
+        return "AuthorizeResponse{" +
                 "resultCode='" + resultCode + '\'' +
                 ", resultMessage='" + resultMessage + '\'' +
                 '}';
